@@ -68,6 +68,7 @@ void compChoice(int& cChoice){
    }
    else if(cChoice == 3){  
       cout << " * The computer choose Scissors: \n";}
+     
    }
    
   // Funtion to determine the winner 
@@ -76,8 +77,10 @@ void whoWin(int& uChoice, int& cChoice){
     do{
         if((uChoice == 1 && cChoice == 3) ||(uChoice == 2 && cChoice == 1) || (uChoice == 3 && cChoice == 2)){
             cout << "\tGanaste! :)\n"; 
+	    cout << "Estas duro" << endl; 
         }
         else{
-            cout << "\tPerdiste! :(\n"; 
+            cout << "\tPerdiste! :(\n";
+	    cout <<"MORON!!!!" << endl;  
         }
     }while(uChoice == cChoice);} 
